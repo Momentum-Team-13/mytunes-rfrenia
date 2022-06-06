@@ -1,0 +1,18 @@
+
+h1 {
+    color: rgb(1, 1, 7);
+}
+
+body {
+    border: 1px solid;
+    background-color: rgb(244, 228, 210);
+}
+
+#page {
+    border: 1px solid;
+    font-style: italic;
+}
+.result {
+    border: 1px solid;
+    font-style:normal;
+}
