@@ -1,35 +1,37 @@
-
-const search = document.querySelector('#searchMusic')
-const display = document.querySelector('#display')
-const searchButton = document.querySelector('#searchButton')
 const pageElement = document.querySelector('#page')
+const search = document.querySelector('#searchMusic')
+const displayElement = document.querySelector('#display')
+pageElement.appendChild(displayElement)
+const searchButton = document.querySelector('#searchButton')
 
-
+//document.getElementById("audio").control = true
 
 function musicLog (itunesData) {
     console.log(itunesData)
 
-
+ displayElement.innerHTML = ''
     itunesData.map (function(song) {
-        console.log ("Songs Line 11", song.trackName)
+        console.log ("Songs Line 14", song.trackName)
 
         let songElement = document.createElement('div')
         songElement.classList.add('result')
         songElement.innerText = `${song.artistName} - ${song.trackName} `
-        pageElement.appendChild(songElement)
-
-        let audioElement = document.createElement('audio')
-        audioElement.src = song.previewUrl
-        audioElement.alt = 'play song'
-        audioElement.classList.add("audio")
-        pageElement.appendChild(audioElement)
-        console.log ("audio Line 26", song.previewUrl)
+        displayElement.appendChild(songElement)
 
         let imageElement = document.createElement('img')
         imageElement.src = song.artworkUrl100
         imageElement.alt = 'photos of artist'
-        imageElement.classList.add("img")
-        pageElement.appendChild(imageElement)
+        imageElement.classList.add('img')
+        displayElement.appendChild(imageElement)
+        console.log ("photo line 26", song.artworkUrl100)
+
+        let audioElement = document.createElement('audio')
+        audioElement.controls = true
+        audioElement.src = song.previewUrl
+        audioElement.alt = 'play song'
+        audioElement.classList.add('audio')
+        displayElement.appendChild(audioElement)
+        console.log ("audio Line 33", song.previewUrl)
 
     })
 }
