@@ -16,3 +16,8 @@ body {
     border: 1px solid;
     font-style:normal;
 }
+
+audio {
+    border: 1px solid;
+    padding: 5px;
+}
