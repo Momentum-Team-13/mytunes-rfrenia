@@ -22,7 +22,7 @@ function musicLog (itunesData) {
 
         //display artist name and song name from search
         let textElement = document.createElement('div')
-        textElement.innerText = `${song.artistName} - "${song.trackName}" `
+        textElement.innerText = `Artist: ${song.artistName} \n Song: "${song.trackName}" `
         songElement.appendChild(textElement)
 
         //display artwork from search
