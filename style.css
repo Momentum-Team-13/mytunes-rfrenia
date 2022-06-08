@@ -10,7 +10,6 @@ body {
     background-image: url("https://lh3.googleusercontent.com/mFR3K_XqJCRU2qW-T9sYwF3KZqbDEz-2O749LcW0dvQm_DARTAxHM-ufxNh8xmIQSvh4D54Un-teYAJsHPuLzYf2FSpk_e2rypyCelrZaE4OzdHACXmngl4E2TcnX6F9dQ3ufkbn8hag_p1jxVK36wbYdZsDKKL37bx6dgeGvOHFHJexk1ejBwGipHObwFsdb5CTgGDhJwPFUyninfu9WADFC7M1zJZxBfWu81Af9UwYguId1n1PjliDJFmU9zNpOpLRy_e8qBBej_AgsezrOaVrRP6-2N-HuEd2gcLyKoAVkcgdpUVfbxVyqzhxNrYIhTn8D4onKbrj0i0xcFtpluP7qvILgjk3EIj8tH9L91P2DKebc1IQRGbg1Uv5Opc6DTK1XLubpYeGywbuifhl56dlqcEau_-xCcAhK2V4F-ybN1wiU49yxAJlu-nPQdY3WfEthtDHeheAzXPWgjdmbZKB-Bp6viMZySDqo24zhD_VUSDR4Jr_L0t3LG-toqERcVIwG9Q-E34co1ZzxPv_TIrzvqLIc9ag83RQiAAKSIDX6oy6N0aMQgOxzrOkHd3ipjmvJUcO_vY8eOSfzGi8M2WPYdteLYPlWkEoxNA4U9tTRS58j-lldcB6C4u7YUBACqCcDhbC8c6Ld_m5dizq9VQmN3Prvqf1LYko4Kst1sRM4AVAvysdwJT-4dlshcIYw0ri9hGF7kdHhm5w5u0syccM6Qd9HLO7Vf1s3hDjz2ACd3eNRsCDvjw9A9q9QA=w1146-h1528-no?authuser=0");
 }
 
-
 audio::-webkit-media-controls-panel{
         background-image: url("https://lh3.googleusercontent.com/gcPDFbwwteEpR6zAX4weXMyRT8l12xzbKsR5sJk8ae5Cq2Ybt0KEd_2P-JI2OEiAXOrCxt8Pc29TmpMT2sm5-LGhovXPjyC458QdrEKy6sljQXcrwHXY5f6rM5O7iVzZmjwWdQ8nA3j3SO8FMIT-Lqe40Cu7l1TlWAwRXFAmdNTQ6hm7GPCxQf4ak7pesSk-1GBDQYHW4jDze1oXHmzc_8ulOZCPiJRxCUV_Dpi4z7XKplKt4LzTu5KN5dNUR55mZoCoUaayh5KagUy2-WFgnrFJ0LX4UDOr5E2LFt1BBHofosnIz62O1YzZvHKGMHazKe_MDgvY9af5KToa87nsCS6TpaAWkwdSmWn_OoByjnX5-eddPiLZKCtgdMQCYbODq3eluAHPjrxR_FzAW-wnnJ4h0Ka8uJUjiW_4-TNy4TFf5aAf82LI1H2SQIfpXK_W9_sPZEnpqPEQ0hvvPzE21spXIxaNQpKV4DLIJZxHm_D0dqZN_d_GiaMK9QeIoCqqZ7WdounY58hbr3wkeGhkSMEQavbMdhtg8YciBYUPC3nUH06gmOFip2uU6Yt8VRH3V2_kSyk2JH2stTjg3Y8KogaXN3EL-q0OqOJyqzBOuzrbmN6iDTZkooIf6FabesXEkKGwN3HodBOrVrCnfbijyBK_ttmAeXEZzBznbR24X_oZW0hlRjGHwLf57xoJPqWPGmSVuDyIc4kZ8jBPmNXGAT7TZOiTWv9B4mUCc-7LrcW4ci8lSv84ARGy3pQeeQ=w2880-h674-no?authuser=0") ;
         }  
@@ -19,6 +18,8 @@ audio::-webkit-media-controls-panel{
     place-content: center;
     text-align: center;
     padding-bottom: 45px;
+    position: sticky;
+    top: 0px;
 }
 
 label {
@@ -37,7 +38,6 @@ button {
 
 #page {
     font-style: italic;
-
 
 
 }

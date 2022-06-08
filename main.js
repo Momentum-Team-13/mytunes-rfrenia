@@ -6,6 +6,11 @@ const searchButton = document.querySelector('#searchButton')
 const audioElement = document.querySelector('audio')
 const imageDisplay = document.querySelector('#imgHeader')
 const textHeader = document.querySelector('#textHeader')
+window.scroll({
+    top: 0,
+    left: 0,
+    behavior:'smooth'
+});
 
 function musicLog (itunesData) {
     console.log(itunesData)
