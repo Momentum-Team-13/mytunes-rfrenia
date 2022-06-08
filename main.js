@@ -1,13 +1,15 @@
 const pageElement = document.querySelector('#page')
 const search = document.querySelector('#searchMusic')
-// const displayElement = document.querySelector('#display')
+const noResults = document.querySelector('#display')
 // pageElement.appendChild(displayElement)
 const searchButton = document.querySelector('#searchButton')
 const audioElement = document.querySelector('audio')
 const imageDisplay = document.querySelector('#imgHeader')
 const textHeader = document.querySelector('#textHeader')
+
+
 window.scroll({
-    top: 0,
+    top:0,
     left: 0,
     behavior:'smooth'
 });
@@ -72,12 +74,17 @@ fetch(exchangeUrl, {
 .then(function (data){
     console.log("Response from exchange API: ", data)
     musicLog(data.results)
+    if ( data.results < 1) {
+        let noResultsElement = document.createElement('div')
+        noResults.innerText = "No Results"
+        console.log(noResultsElement.innerText)
+        
+    }
 })
-// .catch(err => {
-//     function alert(error)
-//     console.error(err);
-//     alert(error)
-// })
+.catch(err => {
+    window.alert("search error")
+    console.error(err);
+})
 });
 
 document.addEventListener('keyup', (event) => {
@@ -96,7 +103,14 @@ document.addEventListener('keyup', (event) => {
     .then(function (data){
         console.log("Response from exchange API: ", data)
         musicLog(data.results)
-    }) 
+        if ( data.results < 1) {
+            let noResultsElement = document.createElement('div')
+            noResults.innerText = "No Results"
+            console.log(noResultsElement.innerText)
     }
-});
-
+}) 
+    .catch(err => {
+        window.alert("search error")
+        console.error(err);
+})
+  }})
