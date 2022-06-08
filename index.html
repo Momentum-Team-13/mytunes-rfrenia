@@ -7,17 +7,24 @@
   <script src="main.js" defer></script>
   <title>Music Search</title>
 </head>
-<h1> Really Awesome Music Site </h1>
+<h1> Ryan's Really Radical Music Site </h1>
 <body>
   <div id="page"  >
-      <label for="site-search">Search for music: </label>
+        <div id = "header">
+      
+        <div  id="details" >
+          <img  id="imgHeader">
+          <h2 id="textHeader" ></h2>
+          <audio  class="audio" alt = 'play song' > </audio>
+        </div>
+        <label for="site-search">Search for music: </label>
       <input type="search"  id="searchMusic" name="q" placeholder="search here..." required/>
-      <button id="searchButton">Search</button>
-  
+      <button id="searchButton">Search!</button>
+    </div>
     <div id="display" >
-            <output name="result" for="searchMusic" id="display" ></output> 
-            <img  class="img">
-            <audio class="audio"  > </audio>
+            <div id="songList"></div>
+
+           
     </div>
 
   </div>
